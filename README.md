@@ -1,4 +1,8 @@
-Website Built with React, Tailwind, GraphQL
+Website Built with React, Redux, Tailwind, SpaceXAPI
+
+
+
+
 
 
 # Getting Started with Create React App
