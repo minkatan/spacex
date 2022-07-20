@@ -6,6 +6,7 @@ Website Built with React, Redux, Tailwind, SpaceXAPI, NASA API
 [ ] add darkmode
 [ ] beautify the page - rocket and dragon
 [ ] add nasa api
+[ ] design and update homepage
 
 
 
