@@ -15,7 +15,7 @@ const Rocketdd = () => {
      <Menu as="div" className="relative">
      <div>
        <Menu.Button className="flex rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-         Rockets
+         Rocket
        </Menu.Button>
      </div>
      <Transition
@@ -27,7 +27,7 @@ const Rocketdd = () => {
        leaveFrom="transform opacity-100 scale-100"
        leaveTo="transform opacity-0 scale-95"
      >
-       <Menu.Items className="absolute flex flex-col gap-y-1 mt-2 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+       <Menu.Items className="absolute left-36 -top-2 w-full flex flex-col gap-y-1 mt-2 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
            {array?.map((r) => (
              <Menu.Item 
              key={r.id}

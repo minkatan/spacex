@@ -4,7 +4,7 @@ import { Menu, Transition } from '@headlessui/react'
 import { useGetDragonsQuery } from '../../Services/spaceXAPI'
 import Loading from '../Loading'
 
-const Rocketdd = () => {
+const Dragondd = () => {
     const {data:array, isFetching} = useGetDragonsQuery()
 
     if(isFetching) return <Loading />
@@ -27,7 +27,7 @@ const Rocketdd = () => {
        leaveFrom="transform opacity-100 scale-100"
        leaveTo="transform opacity-0 scale-95"
      >
-       <Menu.Items className="absolute flex flex-col gap-y-1 mt-2 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
+       <Menu.Items className="absolute left-36 -top-2 w-full flex flex-col gap-y-1 mt-2 rounded-md ring-1 ring-black ring-opacity-5 focus:outline-none">
            {array?.map((r) => (
              <Menu.Item 
              key={r.id}
@@ -48,4 +48,4 @@ const Rocketdd = () => {
   )
 }
 
-export default Rocketdd
+export default Dragondd
