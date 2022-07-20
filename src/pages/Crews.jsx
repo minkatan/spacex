@@ -27,7 +27,7 @@ const Crews = () => {
                 <div className="font-medium text-lg leading-6 space-y-1">
                   <h3 className="text-white">{person.name}</h3>
                   <p className="text-indigo-400">{person.agency}</p>
-                  <Link to={`/rocket/${person.launches[0]}`}>Launches</Link>
+                  <Link to={`/launch/${person.launches[0]}`}>Launches</Link>
                 </div>
 
                 <ul className="flex justify-center space-x-5">

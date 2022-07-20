@@ -13,7 +13,7 @@ const Rocket = () => {
 
   return (
       <div className="container mx-auto space-y-8">
-        <div className="px-4 leading-6 mt-6 border border-gray-800 rounded-md bg-gray-800 w-full py-2 font-semibold text-white hover:bg-gray-900">
+        <div className="px-4 leading-6 mt-6 border-b border-gray-200 w-full py-2 font-semibold text-white hover:bg-gray-900">
           <span className="capitalize text-2xl">{rocket?.name} </span>
         <a href={rocket?.wikipedia} className="flex flex-row items-center gap-x-4 text-sm">
           <span className={rocket?.active ? 'text-emerald-500 uppercase' : 'text-red-500 uppercase'}>{rocket?.active ? 'active' : 'inactive'}</span>
@@ -41,14 +41,16 @@ const Rocket = () => {
           <span className="text-4xl font-extrabold">{new Intl.NumberFormat('en-US', {style: 'unit', unit:'kilogram', unitDisplay: "short"}).format(rocket?.mass?.kg)}</span>
           </p>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 border-b border-gray-200 py-6'>
           {
             imagelist.map((img) => (
               <img src={img} alt=""/>
             ))
           }
         </div>
-        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 pt-4'>
+        <div className='flex flex-row'>
+        <h1 className='text-2xl text-gray-300 flex items-center pr-4 mb-4  border-r-2'>Engine</h1> 
+        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 py-8'>
           <p className='flex flex-col py-1 px-4'>type
             <span className="text-xl font-bold">{engines?.type}</span>
           </p>
@@ -67,7 +69,7 @@ const Rocket = () => {
           <p className='flex flex-col py-1 px-4'>propellant 2
             <span className="text-xl font-bold">{engines?.propellant_2}</span>
           </p>
-          
+        </div>
         </div>
       </div>
 

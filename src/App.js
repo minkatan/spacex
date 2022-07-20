@@ -6,7 +6,7 @@ import store from './app/store'
 
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Launches from "./pages/Launches";
+import Launch from "./pages/Launch";
 import Rocket from "./pages/Rocket";
 import Crews from "./pages/Crews";
 import Company from "./pages/Company"
@@ -23,7 +23,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route exact path='/launches' element={<Launches />} />
+            <Route exact path='/launch/:id' element={<Launch />} />
             <Route exact path='/company' element={<Company />} />
             <Route exact path='/crews' element={<Crews />} />
             <Route exact path='/pod' element={<Pod/>} />

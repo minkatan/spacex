@@ -24,6 +24,9 @@ export const spaceXAPI = createApi({
         getMemberInfo: builder.query({
             query: () => createRequest(`/crew`)
         }),
+        getLaunchInfo: builder.query({
+            query: (id) => createRequest(`/launches/${id}`)
+        }),
     })
 })
 
@@ -34,4 +37,5 @@ export const {
     useGetDragonDetailsQuery,
     useGetCompanyInfoQuery,
     useGetMemberInfoQuery,
+    useGetLaunchInfoQuery,
  } = spaceXAPI;
