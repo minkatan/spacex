@@ -27,6 +27,12 @@ export const spaceXAPI = createApi({
         getLaunchInfo: builder.query({
             query: (id) => createRequest(`/launches/${id}`)
         }),
+        getNextLaunchInfo: builder.query({
+            query: () => createRequest(`/launches/latest`)
+        }),
+        getLaunchesInfo: builder.query({
+            query: () => createRequest(`/launches`)
+        }),
     })
 })
 
@@ -38,4 +44,6 @@ export const {
     useGetCompanyInfoQuery,
     useGetMemberInfoQuery,
     useGetLaunchInfoQuery,
+    useGetNextLaunchInfoQuery,
+    useGetLaunchesInfoQuery,
  } = spaceXAPI;

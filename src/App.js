@@ -12,6 +12,7 @@ import Crews from "./pages/Crews";
 import Company from "./pages/Company"
 import Dragon from "./pages/Dragon"
 import Pod from "./pages/Pod"
+import Launches from "./pages/Launches";
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Routes>
             <Route exact path='/' element={<Home />} />
             <Route exact path='/launch/:id' element={<Launch />} />
+            <Route exact path='/launches' element={<Launches />} />
             <Route exact path='/company' element={<Company />} />
             <Route exact path='/crews' element={<Crews />} />
             <Route exact path='/pod' element={<Pod/>} />

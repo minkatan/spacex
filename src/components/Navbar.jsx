@@ -53,12 +53,19 @@ export default function Navbar() {
               <Disclosure.Button
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                <Rocketdd />
+                <Rocketdd dropdown />
               </Disclosure.Button>
               <Disclosure.Button
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
-                 <Dragondd />
+                 <Dragondd dropdown />
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="../launches"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+               Launches 
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"

@@ -94,7 +94,6 @@ const Dragon = () => {
             <span className="text-xl font-bold"><strong>solar array : </strong>{dragon?.cargo?.solar_array} m</span>
             <span className="text-xl font-bold"><strong>diameter : </strong>{dragon?.diameter?.meters} m</span>
           </p>
-
         </div>
       </div>
 
