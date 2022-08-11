@@ -1,38 +1,13 @@
-import Dragondd from '../components/Dropdown/Dragondd';
-import Rocketdd from '../components/Dropdown/Rocketdd';
-import Logo from '../components/Logo'
-import NextLaunch from '../components/NextLaunch';
-
+import Dragondd from "../components/Dropdown/Dragondd";
+import Rocketdd from "../components/Dropdown/Rocketdd";
+import Logo from "../components/Logo";
+import NextLaunch from "../components/NextLaunch";
 
 const footerNavigation = {
-  solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
-  ],
-  support: [
-    { name: 'Pricing', href: '#' },
-    { name: 'Documentation', href: '#' },
-    { name: 'Guides', href: '#' },
-    { name: 'API Status', href: '#' },
-  ],
-  company: [
-    { name: 'About', href: '#' },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
-  ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
   social: [
     {
-      name: 'Facebook',
-      href: '#',
+      name: "Facebook",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -44,8 +19,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Instagram',
-      href: '#',
+      name: "Instagram",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -57,8 +32,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
+      name: "Twitter",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -66,8 +41,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'GitHub',
-      href: '#',
+      name: "GitHub",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -79,8 +54,8 @@ const footerNavigation = {
       ),
     },
     {
-      name: 'Dribbble',
-      href: '#',
+      name: "Dribbble",
+      href: "#",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -92,10 +67,9 @@ const footerNavigation = {
       ),
     },
   ],
-}
+};
 
 export default function Home() {
-
   return (
     <div className="">
       <main>
@@ -104,33 +78,32 @@ export default function Home() {
           <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div className="relative shadow-xl">
               <div className="absolute inset-x-0">
-               <Logo />
+                <Logo />
               </div>
-              <div className="relative px-4 py-8 sm:px-4 sm:py-8 lg:py-16 lg:px-4">
-              </div>
+              <div className="relative px-4 py-8 sm:px-4 sm:py-8 lg:py-16 lg:px-4"></div>
             </div>
           </div>
         </div>
 
         {/* Launch */}
-        <div className="pt-8 bg-gray-100">
-         
-        </div>
+        <div className="pt-8 bg-gray-100"></div>
 
         {/* Alternating Feature Sections */}
         <div className="relative pt-16 pb-32 overflow-hidden">
-          <div aria-hidden="true" className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100" />
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+          />
           <div className="relative">
             <div className="flex flex-col justify-center items-center">
-            <p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-600 sm:max-w-3xl uppercase">
-            Next Launch
-            </p>
-            <span className='text-gray-800'>
-              <NextLaunch />
-            </span>
+              <p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-600 sm:max-w-3xl uppercase">
+                Next Launch
+              </p>
+              <span className="text-gray-800">
+                <NextLaunch />
+              </span>
             </div>
           </div>
-          
         </div>
 
         {/* Rockets section */}
@@ -149,20 +122,25 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8 uppercase">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">The 
-            Rockets</h2>
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">
+              The Rockets
+            </h2>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
               <Rocketdd />
             </div>
           </div>
         </div>
 
-         {/* Dragon Section */}
-         <div className="bg-gradient-to-r from-purple-900 to-indigo-800">
+        {/* Dragon Section */}
+        <div className="bg-gradient-to-r from-purple-900 to-indigo-800">
           <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8 uppercase">
-            <h2 className="text-3xl font-extrabold text-white tracking-tight">The Dragons</h2>
-            <p className="text-xl font-extrabold text-white tracking-tight">Sending humans and cargo into space</p>
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1'>
+            <h2 className="text-3xl font-extrabold text-white tracking-tight">
+              The Dragons
+            </h2>
+            <p className="text-xl font-extrabold text-white tracking-tight">
+              Sending humans and cargo into space
+            </p>
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1">
               <Dragondd />
             </div>
           </div>
@@ -176,16 +154,20 @@ export default function Home() {
               Get in Touch!
             </span>
           </h2>
-        <div className="flex items-center justify-center space-x-6 md:order-2 py-4 mt-8">
-          {footerNavigation.social.map((item) => (
-            <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
-            </a>
-          ))}
-        </div>
+          <div className="flex items-center justify-center space-x-6 md:order-2 py-4 mt-8">
+            {footerNavigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-gray-400 hover:text-gray-500"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
         </div>
       </main>
     </div>
-  )
+  );
 }

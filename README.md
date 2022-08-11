@@ -1,7 +1,7 @@
 Website Built with React, Redux, Tailwind, SpaceXAPI, NASA API
 
 
-[ ]add animation
+[ ] add animation
 [ ] add launches
 [ ] add darkmode
 [ ] beautify the page - rocket and dragon

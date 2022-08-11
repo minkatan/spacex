@@ -1,17 +1,15 @@
-import { useParams } from 'react-router-dom'
-import { useGetLaunchInfoQuery } from '../Services/spaceXAPI'
+import { useParams } from "react-router-dom";
+import { useGetLaunchInfoQuery } from "../Services/spaceXAPI";
 
-import Loading from '../components/Loading'
+import Loading from "../components/Loading";
 
 const Launch = () => {
-  const {id} = useParams()
-  const {data: launch, isFetching} = useGetLaunchInfoQuery(id)
+  const { id } = useParams();
+  const { data: launch, isFetching } = useGetLaunchInfoQuery(id);
 
-  if(isFetching) return <Loading />
+  if (isFetching) return <Loading />;
 
-  return (
-    <div>{launch.name}</div>
-  )
-}
+  return <div>{launch.name}</div>;
+};
 
-export default Launch
+export default Launch;
